@@ -1,0 +1,14 @@
+ncr-action-list: 0.1
+import:
+  log: com.ncr.tx.apitoolkit.actions.common.LogParametersAction
+  copy: com.ncr.tx.apitoolkit.actions.common.CopyAction
+
+- list: createAccount
+  steps:
+  - action: log
+    parameters:
+      logAll: true
+  - action: copy
+    parameters:
+      set.ext.response.status.code: 201
+      set.ext.response.headers.Location: "/v1/accounts/1234"
