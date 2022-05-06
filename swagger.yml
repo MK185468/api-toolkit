@@ -17,7 +17,7 @@ paths:
         required: true
       responses:
         '201':
-          description: response
+          description: edited on toolkit portal
           content:
             application/json:
               schema:
